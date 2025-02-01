@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Aplicaciones personalizadas
+    'asignaturas',
+    'horarios',
+    'estudiantes'
+#    'asignaturas.apps.AsignaturasConfig',  # Registro usando AppConfig
+#    'horarios.apps.HorariosConfig',        # Registro usando AppConfig
+#    'estudiantes.apps.EstudiantesConfig',  # Registro usando AppConfig
 ]
 
 MIDDLEWARE = [
