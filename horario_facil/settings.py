@@ -31,20 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+# Aplicaciones personalizadas
+    'asignaturas',
+    'horarios',
+    'estudiantes',
+#
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    # Aplicaciones personalizadas
-    'asignaturas',
-    'horarios',
-    'estudiantes'
-#    'asignaturas.apps.AsignaturasConfig',  # Registro usando AppConfig
-#    'horarios.apps.HorariosConfig',        # Registro usando AppConfig
-#    'estudiantes.apps.EstudiantesConfig',  # Registro usando AppConfig
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
