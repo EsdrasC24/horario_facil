@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Asignatura
 from .forms import AsignaturaForm
 
+#TODO: incluir @login_required para proteger las rutas
 # Listar todas las asignaturas
 def lista_asignaturas(request):
     asignaturas = Asignatura.objects.all()
