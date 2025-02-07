@@ -7,7 +7,7 @@ from horarios.models import Horario
 
 class Estudiante(models.Model):
 #    usuario = models.OneToOneField(User, on_delete=models.CASCADE)
-    nombre = models.CharField(max_length=100)
+    nombre = models.CharField(max_length=100, default='Anonimo')
     horarios = models.ManyToManyField(Horario)
 
     def __str__(self):
