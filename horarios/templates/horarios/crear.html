@@ -1,0 +1,35 @@
+{% extends "horarios/base.html" %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <h1 class="text-2xl font-bold mb-6 text-center">Agregar Horario</h1>
+    <form method="post" class="space-y-4">
+        {% csrf_token %}
+        <div>
+            <label for="id_dia" class="block text-sm font-medium text-gray-700">Día</label>
+            {{ form.dia }}
+        </div>
+        <div>
+            <label for="id_hora_inicio" class="block text-sm font-medium text-gray-700">Hora de Inicio</label>
+            {{ form.hora_inicio }}
+        </div>
+        <div>
+            <label for="id_hora_fin" class="block text-sm font-medium text-gray-700">Hora de Fin</label>
+            {{ form.hora_fin }}
+        </div>
+        <div>
+            <label for="id_materia" class="block text-sm font-medium text-gray-700">Materia</label>
+            {{ form.materia }}
+        </div>
+        <div>
+            <label for="id_aula" class="block text-sm font-medium text-gray-700">Aula</label>
+            {{ form.aula }}
+        </div>
+        <div class="text-center">
+            <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                Guardar Horario
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

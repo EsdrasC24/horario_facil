@@ -5,6 +5,7 @@ from .forms import EstudianteForm
 # Listar todos los estudiantes
 def lista_estudiantes(request):
     estudiantes = Estudiante.objects.all()
+    
     return render(request, 'estudiantes/lista.html', {'estudiantes': estudiantes})
 
 # Crear un nuevo estudiante
